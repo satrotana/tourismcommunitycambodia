@@ -1,0 +1,129 @@
+{% extends 'main/main.html' %}
+{% block content %}
+{% load static %}
+{% load i18n %}
+<div style="min-height: 800px; background-color: white;">
+    <div class="container" style="padding-top:100px">
+        <center>
+            <h3 class="font-title">ព័ត៌មានប្រចាំថ្ងៃ</h3>
+        </center>
+        <div class="col-12 filter-doc shadow">
+            <div class="row">
+              <div class="group-form col-md-5">
+                  <label for="dateform" class="form-label">បរិច្ចេទ ចាប់ផ្តើម</label>
+                  <input type="date" class="form-control" id="dateform">
+              </div>
+              <div class="group-form col-md-5">
+                  <label for="dateto" class="form-label">បរិច្ចេទ បញ្ចប់</label>
+                  <input type="date" class="form-control" id="dateto">
+              </div>
+              <div class="group-form col-md-2">
+                  <label for="btnsearch" class="form-label" style="color: white;">_</label>
+                  <button class="btn btn-primary form-control" id="btnsearch">ស្វែងរក</button>
+              </div>
+            </div>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-2 g-4 mt-3 pb-5 justify-content-center">
+            <div class="col col-md-3 news-list-details">
+              <div class="card">
+                <img src="{% static 'dist/img/background.jpg' %}" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+                <div class="card-footer">
+                    <a href="{% url 'news' %}/1" class="btn btn-primary">Detail</a>
+                </div>
+              </div>
+            </div>
+            <div class="col col-md-3 news-list-details">
+                <div class="card">
+                  <img src="{% static 'dist/img/background.jpg' %}" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  </div>
+                  <div class="card-footer">
+                      <a href="" class="btn btn-primary">Detail</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col col-md-3 news-list-details">
+                <div class="card">
+                  <img src="{% static 'dist/img/background.jpg' %}" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  </div>
+                  <div class="card-footer">
+                      <a href="" class="btn btn-primary">Detail</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col col-md-3 news-list-details">
+                <div class="card">
+                  <img src="{% static 'dist/img/background.jpg' %}" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  </div>
+                  <div class="card-footer">
+                      <a href="" class="btn btn-primary">Detail</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col col-md-3 news-list-details">
+                <div class="card">
+                  <img src="{% static 'dist/img/background.jpg' %}" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  </div>
+                  <div class="card-footer">
+                      <a href="" class="btn btn-primary">Detail</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col col-md-3 news-list-details">
+                <div class="card">
+                  <img src="{% static 'dist/img/background.jpg' %}" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  </div>
+                  <div class="card-footer">
+                      <a href="" class="btn btn-primary">Detail</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col col-md-3 news-list-details">
+                <div class="card">
+                  <img src="{% static 'dist/img/background.jpg' %}" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  </div>
+                  <div class="card-footer">
+                      <a href="" class="btn btn-primary">Detail</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col col-md-3 news-list-details">
+                <div class="card">
+                  <img src="{% static 'dist/img/background.jpg' %}" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  </div>
+                  <div class="card-footer">
+                      <a href="" class="btn btn-primary">Detail</a>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}

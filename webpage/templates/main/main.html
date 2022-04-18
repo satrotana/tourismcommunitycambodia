@@ -1,0 +1,162 @@
+{% load i18n %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+      {% block title %}
+      {% translate 'គណៈកម្មាធិការជាតិគ្រប់គ្រង និងអភិវឌ្ឍសហគមន៍ទេសចរណ៍ និងអេកូទេសចរណ៍ (គ.ជ.អ.អ.)' %}
+      {% endblock %}
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'dist/plugins/fontawesome-6.1/css/all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'dist/plugins/fontawesome-6.1/css/fontawesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/mystyle.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Koulen&family=Nokora:wght@300;400&display=swap" rel="stylesheet">
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/jquery3.6.0.min.js' %}"></script>
+</head>
+<body background="{% static 'dist/img/background.jpg' %}">
+  <div style="padding-bottom: 50px;"></div>
+    <!--navbar-->
+    <div class="card-fix shadow " style="position: fixed;top: 0; z-index: 9999; width: 100%;">
+      <div class="navbar justify-content-center top-title" style="color: white; background-color: rgb(45, 71, 92) !important;">
+        {% translate 'គណៈកម្មាធិការជាតិគ្រប់គ្រង និងអភិវឌ្ឍសហគមន៍ទេសចរណ៍ និងអេកូទេសចរណ៍ (គ.ជ.អ.អ.)' %}
+      </div>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light " style="background-color: rgb(255, 255, 255) !important;">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="border: none; outline: none;box-shadow: none;">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="{% url 'home' %}">{% translate 'ទំព័រដើម' %}</a>
+              </li>
+              <li class="nav-item dropdown mymain-list">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">{% translate 'អំពី គ.ជ.អ.អ.' %}</a>
+                <ul class="dropdown-menu mybus-list">
+                  <li><a class="dropdown-item" href="{% url 'nactec_national' %}">{% translate 'គ.ជ.អ.អ. ថ្នាក់ជាតិ' %}</a></li>
+                  <li><a class="dropdown-item" href="{% url 'about_nactec_city_town' %}">{% translate 'គ.ជ.អ.អ. ថ្នាក់រាជធានី ខេត្ត' %}</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown mymain-list">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">{% translate 'បណ្ណាល័យឯកសារ' %}</a>
+                <ul class="dropdown-menu mybus-list">
+                  <li><a class="dropdown-item" href="{% url 'documentations' %}">{% translate 'បទដ្ឋានគតិយុត្ត' %}</a></li>
+                  <li><a class="dropdown-item" href="{% url 'documentations_other' %}">{% translate 'ផ្សេងៗ' %}</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown mymain-list">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">{% translate 'ព័ត៌មាន និងព្រឹត្តិការណ៍' %}</a>
+                <ul class="dropdown-menu mybus-list">
+                  <li><a class="dropdown-item" href="{% url 'news' %}">{% translate 'ព័ត៌មាន' %}</a></li>
+                  <li><a class="dropdown-item" href="#">{% translate 'ព្រឹត្តិការណ៍' %}</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" title="Guidelines for community formation and development">{% translate 'គោលការណ៍ណែនាំ' %}</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'community' %}" title="Nationwide community tourism and ecotourism">{% translate 'អំពីសហគមន៍' %}</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'contact' %}" title="Nationwide community tourism and ecotourism">{% translate 'ទំនាក់ទំនង' %}</a>
+              </li>
+              <li class="nav-item">
+                <div class="my-language" id="navbarNavDarkDropdown">
+                  <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                      {% get_current_language as LANGUAGE_CODE %}
+                      {% get_available_languages as LANGUAGES %}
+                      {% get_language_info_list for LANGUAGES as languages %}
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        {{ LANGUAGE_CODE }}
+                      </a>
+                      <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+
+
+                        {% for lang in languages %}
+                        <li><a class="dropdown-item" href="/{{ lang.code }}/">{{ lang.name_local }}</a></li>
+                        {% endfor %}
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    {% block content %}
+    {% endblock %}
+<div style="background-color: rgb(45, 71, 92); width: 100%;">
+  <div class="row" style="margin: 0;">
+    <div class="info-footage col-md-4">
+      <div class="info-title font-title">
+        <p>
+          {% translate 'គណៈកម្មាធិការជាតិគ្រប់គ្រង និងអភិវឌ្ឍសហគមន៍ទេសចរណ៍ និងអេកូទេសចរណ៍ (គ.ជ.អ.អ.)' %}
+        </p>
+      </div>
+      <div class="info-body">
+        <ul>
+          <li>
+            <i class="fa-solid fa-map-location-dot"></i> : ដីឡូត៍លេខ ៣A ផ្លូវលេខ ១៦៩ សង្កាត់វាលវង់ ខណ្ឌ៧មករា រាជធានីភ្នំពេញ ព្រះរាជាណាចក្រកម្ពុជា
+          </li>
+          <li>
+            <i class="fa-solid fa-phone"></i> : +855 23 884 972
+          </li>
+          <li>
+            <i class="fa-solid fa-envelope-open"></i> : +855 23 974
+          </li>
+          <li>
+            <i class="fa-solid fa-envelope"></i> : info.cbt.kh@gmail.com
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="info-footage col-md-4">
+      <div class="info-title font-title ">
+        <p>
+          {% translate 'ប្រព័ន្ធទំនាក់ទំនងសង្គម' %}
+        </p>
+      </div>
+      <div class="info-body">
+        <ul>
+          <li>
+            <i class="fa-solid fa-map-location-dot"></i> : ដីឡូត៍លេខ ៣A ផ្លូវលេខ ១៦៩ សង្កាត់វាលវង់ ខណ្ឌ៧មករា រាជធានីភ្នំពេញ ព្រះរាជាណាចក្រកម្ពុជា
+          </li>
+          <li>
+            <i class="fa-brands fa-facebook-square"></i> : <a href="https://www.facebook.com/profile.php?id=100075832343597">គណៈកម្មាធិការជាតិគ្រប់គ្រង និងអភិវឌ្ឍសហគមន៍ទេសចរណ៍ និងអេកូទេសចរណ៍</a>
+          </li>
+          <li>
+            <i class="fa-brands fa-telegram"></i> : +855 23 884 972
+          </li>
+          <li>
+            <i class="fa-brands fa-whatsapp-square"></i> : +855 23 884 972
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="info-footage col-md-4">
+      <div class="info-title font-title">
+        <p>
+          {% translate 'ទីតាំង' %}
+        </p>
+      </div>
+      <div class="info-body">
+        <iframe class="mt-1" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7817.583753332353!2d104.91304044501476!3d11.566772477934665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3109516b4b83e617%3A0xc464b23f83b4309a!2z4Z6A4Z-S4Z6a4Z6f4Z694Z6E4Z6R4Z-B4Z6f4Z6F4Z6a4Z6O4Z-N!5e0!3m2!1skm!2skh!4v1647961717371!5m2!1skm!2skh" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+<div style="background-color: #223645; height: 50px;width: 100%;">
+
+</div>
+</body>
+</html>

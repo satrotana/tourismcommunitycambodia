@@ -1,0 +1,87 @@
+{% extends 'main/main.html' %}
+{% block content %}
+{% load static %}
+{% load i18n %}
+<div style="min-height: 800px; background-color: white;">
+    <div class="container" style="padding-top:100px">
+        <div class="row pb-5">
+            <div class="col-md-9">
+                <div class="news-main-title font-title">
+                    <h3 class="new-dt-comment-title">Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat.</h3>
+                </div>
+                <div class="description">
+                    <img src="{% static 'dist/img/background.jpg' %}" width="950px">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu, fermentum et, dapibus sed, urna.
+
+    Morbi interdum mollis sapien. Sed ac risus. Phasellus lacinia, magna a ullamcorper laoreet, lectus arcu pulvinar risus, vitae facilisis libero dolor a purus. Sed vel lacus. Mauris nibh felis, adipiscing varius, adipiscing in, lacinia vel, tellus. Suspendisse ac urna. Etiam pellentesque mauris ut lectus. Nunc tellus ante, mattis eget, gravida vitae, ultricies ac, leo. Integer leo pede, ornare a, lacinia eu, vulputate vel, nisl.
+
+    Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat.
+    Suspendisse mauris. Fusce accumsan mollis eros. Pellentesque a diam sit amet mi ullamcorper vehicula. Integer adipiscing risus a sem. Nullam quis massa sit amet nibh viverra malesuada. Nunc sem lacus, accumsan quis, faucibus non, congue vel, arcu. Ut scelerisque hendrerit tellus. Integer sagittis. Vivamus a mauris eget arcu gravida tristique. Nunc iaculis mi in ante. Vivamus imperdiet nibh feugiat est.
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card-daily-new mt-5">
+                    <h4 class="font-title">The last daily news</h4>
+                    <div class="card-news-recent">
+                        <div class="news-img">
+                            <img src="{% static 'dist/img/background.jpg' %}" width="50px">
+                        </div>
+                        <div class="news-title">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                        </div>
+                    </div>
+                    <div class="card-news-recent">
+                        <div class="news-img">
+                            <img src="{% static 'dist/img/background.jpg' %}" width="50px">
+                        </div>
+                        <div class="news-title">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                        </div>
+                    </div>
+                    <div class="card-news-recent">
+                        <div class="news-img">
+                            <img src="{% static 'dist/img/background.jpg' %}" width="50px">
+                        </div>
+                        <div class="news-title">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                        </div>
+                    </div>
+                    <div class="card-news-recent">
+                        <div class="news-img">
+                            <img src="{% static 'dist/img/background.jpg' %}" width="50px">
+                        </div>
+                        <div class="news-title">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                        </div>
+                    </div>
+                    <div style="padding: 15px;">See More</div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 new-dt-comment-title">
+                {% translate 'មតិយោបល់' %}
+            </div>
+            <div class="row col-12">
+                <div class="group-form col-md-6 new-dt-comment-form">
+                    <label for="name" class="form-label">ឈ្មោះ</label>
+                    <input type="text" class="form-control" id="name" placeholder="ឈ្មោះ">
+                </div>
+                <div class="group-form col-md-6 new-dt-comment-form">
+                    <label for="email" class="form-label">អុីម៉ែល</label>
+                    <input type="email" class="form-control" id="email" placeholder="អុីម៉ែល">
+                </div>
+                <div class="group-form col-md-12 new-dt-comment-form">
+                    <label for="comment" class="form-label">ការពិពណ៌នា</label>
+                    <textarea class="form-control" id="comment" placeholder="ការពិពណ៌នា"></textarea>
+                </div>
+                <div class="group-form col-md-12 new-dt-comment-form">
+                    <input type="btn" class="btn btn-primary" value="បញ្ចូន">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}

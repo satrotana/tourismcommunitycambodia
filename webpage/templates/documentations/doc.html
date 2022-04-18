@@ -1,0 +1,91 @@
+{% extends 'main/main.html' %}
+{% block content %}
+{% load static %}
+{% load i18n %}
+<div style="min-height: 800px; background-color: white;">
+    <div class="container" style="padding-top: 80px;">
+        <center>
+            <h3 class="font-title">បទដ្ឋានគតិយុត្ត</h3>
+        </center>
+        <div class="col-12 filter-doc shadow">
+            <div class="row">
+                <div class="group-form col-md-2">
+                    <label for="dateform" class="form-label">បរិច្ចេទ ចាប់ផ្តើម</label>
+                    <input type="date" class="form-control" id="dateform">
+                </div>
+                <div class="group-form col-md-2">
+                    <label for="dateto" class="form-label">បរិច្ចេទ បញ្ចប់</label>
+                    <input type="date" class="form-control" id="dateto">
+                </div>
+                <div class="group-form col-md-3">
+                    <label for="docname" class="form-label">ឈ្មោះឯកសារ</label>
+                    <input type="text" class="form-control" id="docname" placeholder="ឈ្មោះឯកសារ">
+                </div>
+                <div class="group-form col-md-3">
+                    <label for="doctype" class="form-label">ប្រភេទឯកសារ</label>
+                    <select class="form-select" id="doctype">
+                        <option selected>ទាំងអស់</option>
+                        <option value="1">អនុក្រឹត</option>
+                        <option value="2">របាយការណ៍</option>
+                        <option value="3">ព្រះរាជក្រឹត</option>
+                    </select>
+                </div>
+                <div class="group-form col-md-2">
+                    <label for="btnsearch" class="form-label" style="color: white;">_</label>
+                    <button class="btn btn-primary form-control" id="btnsearch">ស្វែងរក</button>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-3 pb-5">
+            <div class="card-list-doc shadow">
+                <table class="table table-hover">
+                    <tr>
+                        <td>1</td>
+                        <td><a href="#">របាយការណ៍ ប្រចាំឆ្នាំ២០២២</a></td>
+                        <td>2022-01-01</td>
+                        <td>របាយការណ៍</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td><a href="#">របាយការណ៍ ប្រចាំឆ្នាំ២០២២</a></td>
+                        <td>2022-01-01</td>
+                        <td>របាយការណ៍</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td><a href="#">របាយការណ៍ ប្រចាំឆ្នាំ២០២២</a></td>
+                        <td>2022-01-01</td>
+                        <td>របាយការណ៍</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td><a href="#">របាយការណ៍ ប្រចាំឆ្នាំ២០២២</a></td>
+                        <td>2022-01-01</td>
+                        <td>របាយការណ៍</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td><a href="#">របាយការណ៍ ប្រចាំឆ្នាំ២០២២</a></td>
+                        <td>2022-01-01</td>
+                        <td>របាយការណ៍</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td><a href="#">របាយការណ៍ ប្រចាំឆ្នាំ២០២២</a></td>
+                        <td>2022-01-01</td>
+                        <td>របាយការណ៍</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    // $(".doc-category-card").hide();
+    $(document).ready(function(){
+      $(".show-cate-doc").click(function(){
+        $(".doc-category-card").toggle();
+      });
+    });
+    </script>
+{% endblock %}

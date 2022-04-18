@@ -1,0 +1,487 @@
+::-webkit-scrollbar{
+    width: 0px;
+}
+body{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Nokora', sans-serif;
+    font-weight:300;
+}
+.font-title{
+    font-family: 'Koulen', sans-serif;
+}
+.nav-link{
+    border-radius: 5px;
+    transition: 1s;
+}
+
+.title-slide-banner{
+    position: absolute;
+    z-index: 999;
+    display: block;
+    text-align: center;
+    width: 100%;
+    height: 220px;
+    color: white;
+    top:45%; bottom:50%;
+
+}
+button:not(:disabled) {
+    cursor: pointer;
+    z-index: 999;
+}
+.news-box{
+    max-width: 950px;max-height: 250px;border-radius: 15px;padding: 0; overflow: hidden;
+}
+.news-box>.row>div{
+    max-width: 500px;
+}
+.card-text-new{
+    display: -webkit-box;
+    height: 5.6em;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.shadow{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.308), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* text-align: center; */
+  }
+.total-country-card{
+    overflow-y: scroll;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* background-color: white; */
+    padding: 15px;
+    color:white;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.26);
+}
+.total-country-card::-webkit-scrollbar{
+    width: 0px;
+}
+.box-country-count{
+    border: 1 solid gray;
+    background-color: rgba(255, 255, 255, 0.459);
+    color: rgb(255, 255, 255);
+    border-radius: 15px;
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    padding-top: 20px;
+}
+.box-country-count > .country-number{
+    font-size: 20px;
+}
+.navbar-light .navbar-nav .nav-link {
+    margin-right: 20px;
+}
+
+.navbar-expand-lg .navbar-nav .dropdown-menu{
+    left: -110px;
+}
+.navbar-light .navbar-nav .nav-link{
+    /* color: black !important; */
+}
+.mymain-list .mybus-list:hover {
+    display: block;
+    top: 40px;
+}
+.overlay{
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    z-index: 1;
+}
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+    left: 0px;
+}
+.dropdown-menu[data-bs-popper] {
+    top: 100%;
+    left: 0;
+    margin-top: 1rem;
+}
+.mybus-list {
+    position: absolute;
+    top: 10px;
+    display: none;
+    color: black;
+    padding: 15px 15px;
+    text-decoration: none;
+    list-style-type: none;
+    background-color: white;
+    max-width: 500px;
+    min-width: 200px;
+    margin: 0;
+    padding:20px 0 10px 0;
+    border-left: 5px solid rgb(255, 255, 255);
+}
+
+.mybus-list > li {
+    margin: 0;
+    padding: 10px 0 10px 10px;
+    text-align: left;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+a:visited{
+    color: none;
+}
+a:hover{
+    color: none;
+}
+.mybus-list > li:hover {
+    transition: 0.3s;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-left: 5px solid rgb(34, 34, 98);
+}
+.my-language{
+    position: absolute;
+    right: 10px;
+}
+.pdf-file-card{
+    width: 13rem;
+    height: 15rem;
+    overflow: hidden;
+    border-radius: 15px;
+    padding: 0;
+    margin: 15px;
+}
+
+.pdf-file-card>.img-text{
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    background-color: white;
+}
+.pdf-file-card>.pdf-icon-file{
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    width: 60px;
+    height: 60px;
+    background-color: rgb(255, 58, 58);
+    border-radius: 50%;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    border: 3px solid white;
+    opacity: 1;
+    transition: opacity 1s;
+}
+.pdf-file-card>.pdf-icon-file>p{
+    position: absolute;
+    right: 4px;
+    bottom: -10px;
+    font-weight: bold;
+    color: white;
+}
+.pdf-file-card>.downpdf-icon-file{
+    position: absolute;
+    display: block;
+    overflow: hidden;
+    right: 5px;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(66, 180, 66);
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+    padding-top: 5px;
+    border: 3px solid white;
+    opacity:0;
+    transition: opacity 1s;
+}
+.pdf-file-card:hover .downpdf-icon-file{
+    opacity: 1;
+}
+.pdf-file-card:hover .pdf-icon-file{
+    opacity:0;
+    transition: opacity 1s;
+}
+.info-footage{
+    padding: 15px;
+    color: white;
+}
+.info-footage>.info-title{
+    border-bottom: 1px solid rgb(138, 138, 138);
+    height: 60px;
+}
+.info-footage>.info-body> ul > li{
+    padding-top: 15px;
+    list-style-type: none
+}
+.navbar-light .navbar-nav .nav-link {
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+}
+.new-contain>.new-title{
+    text-align: center;
+    padding-bottom: 15px;
+}
+.new-contain>.new-description {
+    text-align: justify;
+    text-indent: 50px;
+    line-height: 30px;
+    font-weight: 400;
+}
+.box-doc-national{
+    width: 100%;
+    border: 1px solid rgba(128, 128, 128, 0.445);
+    border-radius: 5px;
+    padding: 10px; 
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgba(16, 26, 32, 0.2);
+}
+.doc-national-card{
+    width: 150px;
+    height: 180px;
+    border: 1px solid rgba(128, 128, 128, 0.1);
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+    margin: 5px;
+    
+
+}
+.img-bg-fix-center{
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+.doc-national-card>.title{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-align: center;
+    /* background-color: rgba(16, 26, 32, 0.2); */
+    padding: 5px;
+}
+.doc-national-card>.title>p{
+    background-color: rgb(255 93 93 / 77%);
+    border-radius: 5px;
+}
+.doc-national-card>.download{
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.doc-national-card>.download>a{
+    color: white;
+    background-color: rgb(0, 153, 255);
+    margin: 0;
+    padding: 5px;
+    width: 100%;
+    border-radius: 5px;
+}
+.card-list-doc{
+    width: 100%;
+    margin-top: 15px;
+    border: 1px solid rgba(128, 128, 128, 0.445);
+    padding: 15px;
+    border-radius: 5px;
+}
+.card-list-doc>ul>li{
+    padding-top: 15px;
+    padding-left: 15px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.445);
+    text-decoration: none;
+    list-style-type: none;
+    font-weight: 400;
+}
+.filter-doc{
+    padding: 15px;
+    border: 1px solid rgba(138, 138, 138, 0.548);
+    border-radius: 5px;
+}
+.card-daily-new{
+    padding: 10px;
+    background-color: rgba(255, 255, 255);
+    border: 1px solid rgba(138, 138, 138, 0.548);
+}
+
+.card-news-recent{
+    position: relative;
+    height: 80px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 80px auto;
+    grid-gap: 10px;
+    background-color: white;
+    border: 1px solid rgba(138, 138, 138, 0.548);
+    border-radius: 5px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+.col.col-md-3.news-list-details {
+    min-width: 300px;
+}
+.card-news-recent .news-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card-news-recent .news-title{
+    position: relative;
+    overflow: hidden;
+}
+.news-main-title{
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.new-dt-comment-title{
+    margin-bottom: 15px;
+    border-bottom: 1px solid burlywood;
+}
+.new-dt-comment-form{
+    margin-top: 15px;
+}
+.new-dt-comment-form:last-child{
+    margin-bottom: 30px;
+}
+.contact-img-banner{
+    position: relative;
+    width: 100%;
+    height: 500px;
+}
+.contact-img-banner img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card-daily-new h4{
+    position: relative;
+    padding: 20px;
+    border-bottom: 1px solid burlywood;
+}
+.card-daily-new .info-body-contact{
+    position: relative;
+    padding: 20px;
+}
+.card-daily-new .info-body-contact ul li{
+    position: relative;
+    list-style-type: none;
+    padding-bottom: 15px;
+}
+@media only screen and (max-width : 991px){
+    .show-cate-doc{
+        display: block;
+    }
+    .doc-category-card{
+        position: fixed;
+        top: 0;
+        display: none;
+        z-index: 9999;
+        background-color: rgba(46, 81, 97, 0.842);
+        color: white;
+        font-weight: 400px;
+        height: 100%;
+        width: 100%;
+        right: 0px;
+        padding-top: 50px;
+    }
+    .card-list-doc {
+        width: 100%;
+    }
+    .doc-category-card>ul>li{
+        padding-bottom: 10px;
+    }
+    .news-box{
+        min-width: auto;height: auto; border-radius: 15px;padding: 0; overflow: hidden;
+    }
+    .news-box {
+        max-width: 950px;
+        max-height: none;
+    }
+    .news-box>.row>div {
+        max-width: none;
+    }
+    .country-total-card{
+        height: auto;
+        max-width: 500px;
+    }
+    .card-text{
+        height: 100%;
+        text-overflow: ellipsis;
+    }
+    .mybus-list > li {
+        margin: 0;
+        padding: 0px 0px 0px 0px;
+        text-align: center;
+        justify-content: center;
+        border: 0 solid;
+    }
+    .my-language{
+        position: static;
+        justify-content: center;
+    }
+    .mybus-list {
+        position: static;
+        top: 0px;
+        display: none;
+        color: black;
+        padding: 15px 15px;
+        text-decoration: none;
+        list-style-type: none;
+        background-color: white;
+        max-width: auto;
+        min-width: auto;
+        margin: 0;
+        padding:0px 0px 0px 0px;
+        border-left: 0px solid rgb(255, 255, 255);
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        max-width: 100%;
+    }
+    .dropdown-menu[data-bs-popper] {
+        top: 100%;
+        left: 0;
+        margin-top: 0rem;
+    }
+    .top-title{
+        display: none;
+    }
+    .title-slide-banner > .font-title > h1{
+        font-size: 18px;
+    }
+    .title-slide-banner > h4{
+        font-size: 18px;
+    }
+    .cam-icon {
+        font-size: 10px;
+        width: 60px;
+    }
+}
+
+@media only screen and (max-width : 560px){
+    .title-slide-banner .font-title{
+        font-size: 16px;
+    }
+    .title-slide-banner > h4{
+        font-size: 16px;
+    }
+}

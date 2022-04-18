@@ -1,0 +1,375 @@
+{% extends 'main/main.html' %}
+{% block content %}
+{% load static %}
+{% load i18n %}
+<!--image slide-->
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+
+  <div class="title-slide-banner">
+    <h1 class="font-title">សូមស្វាគមន៍ មកកាន់ប្រទេសកម្ពុជា</h1>
+    <h4>ព្រះរាជាណាចក្រកម្ពុជា ព្រះរាជាណាចក្រអឆ្ឆរិយៈ</h4>
+  </div>
+  <div class="overlay"></div>
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+  </div>
+
+  <div class="carousel-inner" style="height: 500px;">
+    <div class="carousel-item active" data-bs-interval="5000" style="height: 500px;">
+      <img src="{% static 'dist/img/image-slide.jpg' %}" class="d-block w-100" alt="..." style="width: 100%;height: 100%;object-fit: cover;">
+      <div class="carousel-caption d-none d-md-block">
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="5000" style="height: 500px;">
+      <img src="{% static 'dist/img/image-slide1.jpg' %}" class="d-block w-100" alt="..." style="width: 100%;height: 100%;object-fit: cover;">
+      <div class="carousel-caption d-none d-md-block">
+      </div>
+    </div>
+  </div>
+  
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<div class="bg-light pb-5">
+  <div class="container">
+    <!-- news place  -->
+    <div class="row justify-content-center pt-5">
+      <div class="col-md-6">
+        <div class="card-body text-center">
+          <h3 class="card-title font-title">ព័ត៌មានថ្មីៗ</h3>
+          <p style="font-size: 18px;">ព័ត៌មាន សកម្មភាព គណៈកម្មាធិការជាតិគ្រប់គ្រង និងអភិវឌ្ឍសហគមន៍ទេសចរណ៍</p>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="card mb-3 news-box">
+        <div class="row g-0">
+          <div class="col-md-4 new-title">
+            <img src="{% static 'dist/img/new001.jpg' %}" style="width: 100%; height: 100%; -o-object-fit: cover; object-fit: cover;">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body new-description">
+              <p class="card-title font-title">សមាសភាពគណៈកម្មការដាក់ពិន្ទុសំរាប់កម្មវិធីប្រឡងប្រណាំងថតវីដេអូកំណប់សហគមន៍ ជំរំទេសចរណ៍ ក្រោមប្រធានបទ “ខ្ញុំ និងធម្មជាតិ” រដូវកាលទី៣</p>
+              <p class="card-text-new">សមាសភាពគណៈកម្មការដាក់ពិន្ទុសំរាប់កម្មវិធីប្រឡងប្រណាំងថតវីដេអូកំណប់សហគមន៍ ជំរំទេសចរណ៍ ក្រោមប្រធានបទ “ខ្ញុំ និងធម្មជាតិ” រដូវកាលទី៣
+                - ឯកឧត្តមបណ្ឌិត ជុក ជំនោរ ប្រធាននាយកដ្ឋានអភិវឌ្ឍន៍ផលិតផលទេសចរណ៍ និងជាប្រធានលេខាធិការដ្ឋានគណៈកម្មាធិការជាតិគ្រប់គ្រង និងអភិវឌ្ឍសហគមន៍ទេសចរណ៍ និងអេកូទេសចរណ៍
+                - លោក ឡោ វុទ្ឍី៖ Producer/Managing Director/Event Director
+                - លោក Proumchin Vicheth, Director/Cinematographer/Editor
+              </p>
+              <p class="card-text"><small class="text-muted">{% translate 'មើលបន្ថែម' %}</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="card mb-3 news-box">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="{% static 'dist/img/new002.jpg' %}" style="width: 100%; height: 100%; -o-object-fit: cover; object-fit: cover;">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <p class="card-title font-title">គណៈកម្មាធិការជាតិគ្រប់គ្រង និងអភិវឌ្ឍសហគមន៍ទេសចរណ៍ និងអេកូទេសចរណ៍ និងក្រសួងទេសចរណ៍ រៀបចំសិក្ខាសាលាតម្រង់ទិសសម្រាប់បេក្ខជនដែលចួលរួមកម្មវិធីប្រឡងប្រណាំងវីដេអូ “កំណប់សហគមន៍ ជំរំទេសចរណ៍” រដូវកាលទី២</p>
+              <p class="card-text-new">នាព្រឹកថ្ងៃសៅរ៍ ទី១២ ខែកុម្ភៈ ឆ្នាំ២០២២ នៅមជ្ឈមណ្ឌលសហប្រតិបត្តិការកម្ពុជា-កូរ៉េ នាយកដ្ឋានអភិវឌ្ឍន៍ផលិតផលទេសចរណ៍ក្រសួងទេសចរណ៍ សហការជាមួយលេខាធិការដ្ឋានគណៈកម្មាធិការជាតិគ្រប់គ្រង និងអភិវឌ្ឍសហគមន៍ទេសចរណ៍ និងអេកូទេសចរណ៍ ក្រុមការងារដើរព្រៃ និងនរៈ ស្ទីឌីយូ រៀបចំសិក្ខាសាលាតម្រង់ទិសសម្រាប់បេក្ខជនដែលបានចុះឈ្មោះចូលរួមកម្មវិធីប្រឡងប្រណាំងវីដេអូអំពីសហគមន៍ទេសចរណ៍ និងអេកូទេសចរណ៍ រដូវកាលទី៣ ឆ្នាំ២០២២ ក្រោមប្រធានបទ “ខ្ញុំ និងធម្មជាតិ (Back to Nature)” ដែលបានប្រព្រឹត្តទៅក្រោម</p>
+              <p class="card-text"><small class="text-muted">{% translate 'មើលបន្ថែម' %}</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="card mb-3 news-box">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="{% static 'dist/img/new003.jpg' %}" style="width: 100%; height: 100%; -o-object-fit: cover; object-fit: cover;">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <p class="card-title font-title">ក្រសួងទេសចរណ៍ និងគណៈកម្មាធិការជាតិគ្រប់គ្រង និងអភិវឌ្ឍសហគមន៍ទេសចរណ៍ និងអេកូទេសចរណ៍ ចុះអនុស្សារណៈយោគយល់ (MoU) ជាមួយក្រុមហ៊ុន នរៈ ស្ទីឌីយូ ដើម្បីជំរុញការអភិវឌ្ឍ និងផ្សព្វផ្សាយផលិតផលទេសចរណ៍...</p>
+              <p class="card-text-new">នារសៀលថ្ងៃព្រហស្បតិ៍ ៤ រោច ខែមិគសិរ ឆ្នាំឆ្លូវ ត្រីស័ក ពុទ្ធសករាជ ២៥៦៥ ត្រូវនឹងថ្ងៃទី២៣ ខែធ្នូ ឆ្នាំ២០២១ ក្រសួងទេសចរណ៍ និងគណៈកម្មាធិការជាតិគ្រប់គ្រង និងអភិវឌ្ឍសហគមន៍ទេសចរណ៍ និងអេកូទេសចរណ៍ បានរៀបចំពិធីចុះអនុស្សារណៈយោគយល់ (MoU) ជាមួយក្រុមហ៊ុន នរៈ ស្ទីឌីយូ នាស្តីការក្រសួងទេសចរណ៍ ក្រោមអធិបតីឯកឧត្ដម តុប សុភ័ក រដ្ឋលេខាធិការ ក្រសួងទេសចរណ៍ តំណាងឯកឧត្ដម ថោង ខុន រដ្ឋមន្ត្រីក្រសួងទេសចរណ៍ ដើម្បីជំរុញការអភិវឌ្ឍ និងការផ្សព្វផ្សាយផលិតផលទេសចរណ៍ និងសហគមន៍ទេសចរណ៍ និងអេកូទេសចរណ៍។</p>
+              <p class="card-text"><small class="text-muted">{% translate 'មើលបន្ថែម' %}</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <a href="#" class="btn btn-primary" style="width: 200px; border-radius: 20px;">{% translate 'មើលបន្ថែម' %}</a>
+    </div>
+
+    <!-- RECREATE AREA -->
+    <div class="row justify-content-center mt-5">
+      <div class="col-md-6">
+        <div class="card-body text-center">
+          <h3 class="card-title font-title">សហគមន៍ទេសចរណ៍</h3>
+          <p class="card-text" style="font-size: 18px;">សហគមន៍ទេសចរណ៍ សំខាន់ៗក្នុងប្រទេសកម្ពុជា</p>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="card" style="width: 18rem;height: 20rem; overflow: hidden;border-radius: 15px; padding: 0; margin: 15px;">
+          <img src="{% static 'dist/img/community001.jpg' %}" style="width: 100%;
+          height: 100%;
+          -o-object-fit: cover;
+          object-fit: cover;">
+          <div class="img-text" style="margin-left: 7px; width: 17rem; position: absolute; bottom: 5px; background-color: white; border-radius: 15px;">
+            <div class="card-body text-center">
+              <h5 class="card-titl font-title">សហគមន៍ធម្មជាតិចង្ក្រានរយ</h5>
+              <p class="card-text">សហគមន៍ធម្មជាតិចង្ក្រានរយ</p>
+            </div>
+          </div>
+      </div>
+      <div class="card" style="width: 18rem;height: 20rem; overflow: hidden;border-radius: 15px; padding: 0; margin: 15px;">
+        <img src="{% static 'dist/img/community002.jpg' %}" style="width: 100%;
+        height: 100%;
+        -o-object-fit: cover;
+        object-fit: cover;">
+        <div class="img-text" style="margin-left: 7px; width: 17rem; position: absolute; bottom: 5px; background-color: white; border-radius: 15px;">
+          <div class="card-body text-center">
+            <h5 class="card-titl font-title">សហគមន៍ធម្មជាតិចង្ក្រានរយ</h5>
+              <p class="card-text">សហគមន៍ធម្មជាតិចង្ក្រានរយ</p>
+          </div>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;height: 20rem; overflow: hidden;border-radius: 15px; padding: 0;  margin: 15px;">
+          <img src="{% static 'dist/img/community003.jpg' %}" style="width: 100%;
+          height: 100%;
+          -o-object-fit: cover;
+          object-fit: cover;">
+          <div class="img-text" style="margin-left: 7px; width: 17rem; position: absolute; bottom: 5px; background-color: white; border-radius: 15px;">
+            <div class="card-body text-center">
+              <h5 class="card-titl font-title">សហគមន៍ធម្មជាតិចង្ក្រានរយ</h5>
+              <p class="card-text">សហគមន៍ធម្មជាតិចង្ក្រានរយ</p>
+            </div>
+          </div>
+      </div>
+      <div class="row justify-content-center">
+        <a href="#" class="btn btn-primary" style="width: 200px; border-radius: 20px;">{% translate 'មើលបន្ថែម' %}</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- total recreate area  -->
+<div class="img" style="height: 500px; position: relative;">
+  <img src="{% static 'dist/img/image-slide.jpg' %}" style="width: 100%; height: 100%; -o-object-fit: cover; object-fit: cover;">
+  <div class="total-country-card">
+    <div class="row justify-content-center">
+      <div class="col-md-2 text-center box-country-count shadow">
+        <h5 class="card-title">ភ្នំពេញ</h5>
+        <p class="country-number">512</p>
+      </div>
+      <div class="col-md-2 text-center box-country-count shadow">
+        <h5 class="card-title">កំពង់ចាម</h5>
+        <p class="country-number">512</p>
+      </div>
+      <div class="col-md-2 text-center box-country-count shadow">
+        <h5 class="card-title">កណ្តាល</h5>
+        <p class="country-number">512</p>
+      </div>
+      <div class="col-md-2 text-center box-country-count shadow">
+        <h5 class="card-title">ក្រចេះ</h5>
+        <p class="country-number">512</p>
+      </div>
+      <div class="col-md-2 text-center box-country-count shadow">
+        <h5 class="card-title">តាកែវ</h5>
+        <p class="country-number">512</p>
+      </div>
+      <div class="col-md-2 text-center box-country-count shadow">
+        <h5 class="card-title">កំពង់ស្ពឺ</h5>
+        <p class="country-number">512</p>
+      </div>
+      <div class="col-md-2 text-center box-country-count shadow">
+        <h5 class="card-title">កំពង់សោម</h5>
+        <p class="country-number">512</p>
+      </div>
+      <div class="col-md-2 text-center box-country-count shadow">
+        <h5 class="card-title">ភ្នំពេញ</h5>
+        <p class="country-number">512</p>
+      </div>
+      <div class="col-md-2 text-center box-country-count shadow">
+        <h5 class="card-title">កំពង់ចាម</h5>
+        <p class="country-number">512</p>
+      </div>
+      <div class="col-md-2 text-center box-country-count shadow">
+        <h5 class="card-title">កណ្តាល</h5>
+        <p class="country-number">512</p>
+      </div>
+      <div class="col-md-2 text-center box-country-count shadow">
+        <h5 class="card-title">ក្រចេះ</h5>
+        <p class="country-number">512</p>
+      </div>
+      <div class="col-md-2 text-center box-country-count shadow">
+        <h5 class="card-title">តាកែវ</h5>
+        <p class="country-number">512</p>
+      </div>
+      <div class="col-md-2 text-center box-country-count shadow">
+        <h5 class="card-title">កំពង់ស្ពឺ</h5>
+        <p class="country-number">512</p>
+      </div>
+      <div class="col-md-2 text-center box-country-count shadow">
+        <h5 class="card-title">កំពង់សោម</h5>
+        <p class="country-number">512</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- picture of traveling place  -->
+<div class="bg-light pb-5">
+  <div class="container">
+    <div class="row justify-content-center pt-5">
+      <div class="col-md-6">
+        <div class="card-body text-center">
+          <h3 class="card-title font-title">តំបន់សហគមន័ទេសចរណ៍</h3>
+          <p style="font-size: 18px;">តំបន់សហគមន័ទេសចរណ៍ ក្នុងប្រទេសកម្ពុជា</p>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="card col-md-4" style="width: 18rem;height: 20rem; overflow: hidden;border-radius: 15px; padding: 0; margin: 15px;">
+            <img src="{% static 'dist/img/pic001.jpg' %}" style="width: 100%;height: 100%;-o-object-fit: cover;object-fit: cover;">
+        </div>
+          <div class="card col-md-4" style="width: 18rem;height: 20rem; overflow: hidden;border-radius: 15px; padding: 0; margin: 15px;">
+            <img src="{% static 'dist/img/pic002.jpg' %}" style="width: 100%;height: 100%;-o-object-fit: cover;object-fit: cover;">
+        </div>
+        <div class="card col-md-4" style="width: 18rem;height: 20rem; overflow: hidden;border-radius: 15px; padding: 0; margin: 15px;">
+            <img src="{% static 'dist/img/pic003.jpg' %}" style="width: 100%;height: 100%;-o-object-fit: cover;object-fit: cover;">
+        </div>
+        <div class="card col-md-4" style="width: 18rem;height: 20rem; overflow: hidden;border-radius: 15px; padding: 0; margin: 15px;">
+            <img src="{% static 'dist/img/pic004.jpg' %}" style="width: 100%;height: 100%;-o-object-fit: cover;object-fit: cover;">
+        </div>
+          <div class="card col-md-4" style="width: 18rem;height: 20rem; overflow: hidden;border-radius: 15px; padding: 0; margin: 15px;">
+            <img src="{% static 'dist/img/pic005.jpg' %}" style="width: 100%;height: 100%;-o-object-fit: cover;object-fit: cover;">
+        </div>
+        <div class="card col-md-4" style="width: 18rem;height: 20rem; overflow: hidden;border-radius: 15px; padding: 0; margin: 15px;">
+            <img src="{% static 'dist/img/pic006.jpg' %}" style="width: 100%;height: 100%;-o-object-fit: cover;object-fit: cover;">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div style="background-color: rgba(0, 0, 0, 0.5); height: 500px;width: 100%; position: relative; overflow: hidden;">
+  <div class="row justify-content-center row-cam-icon" style="position: absolute;  left: 50%;  top: 50%;  transform: translate(-50%,-50%);">
+    <div class="col-md-12 text-center" style="color: white;">
+      <div class="card-body text-center">
+        <h3 class="card-title font-title">ការបោះតង់នៅកម្ពុជា</h3>
+        <p class="card-text">សូមស្វាគមន៍ និងរីករាយជាមួយការបោះតង់ កម្សាន្តអារម្មណ៍។</p>
+      </div>
+    </div>
+    <div class="col-md-3 cam-icon" style=" overflow: hidden; padding: 0; margin: 15px;text-align: center;padding-top: 10px;padding-bottom: 15px; color: white;border-bottom: 1px solid white;">
+      <i class="fa-solid fa-map-location-dot fa-3x"></i>
+    </div>
+    <div class="col-md-3 cam-icon" style=" overflow: hidden; padding: 0; margin: 15px;text-align: center;padding-top: 10px;padding-bottom: 15px; color: white;border-bottom: 1px solid white;">
+      <i class="fa-solid fa-route fa-3x"></i>
+    </div>
+    <div class="col-md-3 cam-icon" style=" overflow: hidden; padding: 0; margin: 15px;text-align: center;padding-top: 10px;padding-bottom: 15px; color: white;border-bottom: 1px solid white;">
+      <i class="fa-solid fa-person-hiking fa-3x"></i>
+    </div>
+
+    <div class="col-md-3 cam-icon" style=" overflow: hidden; padding: 0; margin: 15px;text-align: center;padding-top: 10px;padding-bottom: 15px; color: white;border-bottom: 1px solid white;">
+      <i class="fa-solid fa-signs-post fa-3x"></i>
+    </div>
+    <div class="col-md-3 cam-icon" style=" overflow: hidden; padding: 0; margin: 15px;text-align: center;padding-top: 10px;padding-bottom: 15px; color: white;border-bottom: 1px solid white;">
+      <i class="fa-solid fa-tent fa-3x"></i>
+    </div>
+    <div class="col-md-3 cam-icon" style=" overflow: hidden; padding: 0; margin: 15px;text-align: center;padding-top: 10px;padding-bottom: 15px; color: white;border-bottom: 1px solid white;">
+      <i class="fa-solid fa-mountain fa-3x"></i>
+    </div>
+  </div>
+  
+</div>
+
+<div class="bg-light pb-5">
+  <div class="container">
+    <!-- RECREATE AREA -->
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="card-body text-center">
+          <h3 class="card-title font-title">ឯកសារ</h3>
+          <p class="card-text">ឯកសារ ផ្លូវការក្រសួងទេសចរណ៍</p>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="card pdf-file-card">
+          <span class="pdf-icon-file"><p>PDF</p></span>
+          <a href="{% static 'dist/pdf/pdf001.pdf' %}" target="_blank"  class="downpdf-icon-file shadow"><i class="fa-solid fa-download"></i></a>
+          <img src="{% static 'dist/img/pdf001.jpg' %}" style="width: 100%;height: 100%;">
+          <div class="img-text">
+            <div class="card-body text-center">
+              <h5 class="card-titl font-titlee">ឈ្មោះ សហគមន៍ទេសចរណ៍</h5>
+              <p class="card-text">ការពិពណ៌នាអំពី សហគមន៍ទេសចរណ៍តាមតំបន់នានា</p>
+            </div>
+          </div>
+      </div>
+      <div class="card pdf-file-card">
+        <span class="pdf-icon-file"><p>PDF</p></span>
+        <a href="{% static 'dist/pdf/pdf002.pdf' %}" target="_blank"  class="downpdf-icon-file shadow"><i class="fa-solid fa-download"></i></a>
+        <img src="{% static 'dist/img/pdf002.jpg' %}" style="width: 100%;height: 100%;">
+        <div class="img-text">
+          <div class="card-body text-center">
+            <h5 class="card-titl font-titlee">ឈ្មោះ សហគមន៍ទេសចរណ៍</h5>
+            <p class="card-text">ការពិពណ៌នាអំពី សហគមន៍ទេសចរណ៍តាមតំបន់នានា</p>
+          </div>
+        </div>
+      </div>
+      <div class="card pdf-file-card">
+        <span class="pdf-icon-file"><p>PDF</p></span>
+        <a href="{% static 'dist/pdf/pdf003.pdf' %}" target="_blank"  class="downpdf-icon-file shadow"><i class="fa-solid fa-download"></i></a>
+        <img src="{% static 'dist/img/pdf003.jpg' %}" style="width: 100%;height: 100%;">
+        <div class="img-text">
+          <div class="card-body text-center">
+            <h5 class="card-titl font-titlee">ឈ្មោះ សហគមន៍ទេសចរណ៍</h5>
+            <p class="card-text">ការពិពណ៌នាអំពី សហគមន៍ទេសចរណ៍តាមតំបន់នានា</p>
+          </div>
+        </div>
+      </div>
+      <div class="card pdf-file-card">
+        <span class="pdf-icon-file"><p>PDF</p></span>
+        <a href="{% static 'dist/pdf/pdf004.pdf' %}" target="_blank"  class="downpdf-icon-file shadow"><i class="fa-solid fa-download"></i></a>
+        <img src="{% static 'dist/img/pdf004.jpg' %}" style="width: 100%;height: 100%;">
+        <div class="img-text">
+          <div class="card-body text-center">
+            <h5 class="card-titl font-titlee">ឈ្មោះ សហគមន៍ទេសចរណ៍</h5>
+            <p class="card-text">ការពិពណ៌នាអំពី សហគមន៍ទេសចរណ៍តាមតំបន់នានា</p>
+          </div>
+        </div>
+      </div>
+      <div class="card pdf-file-card">
+        <span class="pdf-icon-file"><p>PDF</p></span>
+        <a href="{% static 'dist/pdf/pdf005.pdf' %}" target="_blank"  class="downpdf-icon-file shadow"><i class="fa-solid fa-download"></i></a>
+        <img src="{% static 'dist/img/pdf005.jpg' %}" style="width: 100%;height: 100%;">
+        <div class="img-text">
+          <div class="card-body text-center">
+            <h5 class="card-titl font-titlee">ឈ្មោះ សហគមន៍ទេសចរណ៍</h5>
+            <p class="card-text">ការពិពណ៌នាអំពី សហគមន៍ទេសចរណ៍តាមតំបន់នានា</p>
+          </div>
+        </div>
+      </div>
+      <div class="card pdf-file-card">
+        <span class="pdf-icon-file"><p>PDF</p></span>
+        <a href="{% static 'dist/pdf/pdf006.pdf' %}" target="_blank"  class="downpdf-icon-file shadow"><i class="fa-solid fa-download"></i></a>
+        <img src="{% static 'dist/img/pdf006.jpg' %}" style="width: 100%;height: 100%;">
+        <div class="img-text">
+          <div class="card-body text-center">
+            <h5 class="card-titl font-titlee">ឈ្មោះ សហគមន៍ទេសចរណ៍</h5>
+            <p class="card-text">ការពិពណ៌នាអំពី សហគមន៍ទេសចរណ៍តាមតំបន់នានា</p>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <a href="#" class="btn btn-primary" style="width: 200px; border-radius: 20px;">{% translate 'See More' %}</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

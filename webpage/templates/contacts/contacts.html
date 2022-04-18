@@ -1,0 +1,96 @@
+{% extends 'main/main.html' %}
+{% block content %}
+{% load static %}
+{% load i18n %}
+<div style="min-height: 800px; background-color: white;">
+  <div class="container" style="padding-top:100px;">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="contact-img-banner">
+          <img src="{% static 'dist/img/tourism.jpg' %}" alt="">
+        </div>
+      </div>
+      <div class="col-md-12">
+        <div class="card-daily-new mt-5 shadow">
+          <h4 class="font-title">{% translate 'National Committee for Management and Development of Tourism and Ecotourism Communities (NACTEC)' %}</h4>
+          <div class="info-body-contact">
+            <ul>
+              <li>
+                <i class="fa-solid fa-map-location-dot"></i> : ដីឡូត៍លេខ ៣A ផ្លូវលេខ ១៦៩ សង្កាត់វាលវង់ ខណ្ឌ៧មករា រាជធានីភ្នំពេញ ព្រះរាជាណាចក្រកម្ពុជា
+              </li>
+              <li>
+                <i class="fa-solid fa-phone"></i> : +855 23 884 972
+              </li>
+              <li>
+                <i class="fa-solid fa-envelope-open"></i> : +855 23 974
+              </li>
+              <li>
+                <i class="fa-solid fa-envelope"></i> : info.cbt.kh@gmail.com
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-12">
+        <div class="card-daily-new mt-5 shadow">
+          <h4 class="font-title">{% translate 'SOCIAL MEDIA' %}</h4>
+          <div class="info-body-contact">
+            <ul>
+              <li>
+                <i class="fa-solid fa-map-location-dot"></i> : ដីឡូត៍លេខ ៣A ផ្លូវលេខ ១៦៩ សង្កាត់វាលវង់ ខណ្ឌ៧មករា រាជធានីភ្នំពេញ ព្រះរាជាណាចក្រកម្ពុជា
+              </li>
+              <li>
+                <i class="fa-brands fa-facebook-square"></i> : <a href="https://www.facebook.com/profile.php?id=100075832343597">គណៈកម្មាធិការជាតិគ្រប់គ្រង និងអភិវឌ្ឍសហគមន៍ទេសចរណ៍ និងអេកូទេសចរណ៍</a>
+              </li>
+              <li>
+                <i class="fa-brands fa-telegram"></i> : +855 23 884 972
+              </li>
+              <li>
+                <i class="fa-brands fa-whatsapp-square"></i> : +855 23 884 972
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-12">
+        <div class="card-daily-new mt-5 shadow">
+          <h4 class="font-title">{% translate 'LOCATION' %}</h4>
+          <div class="info-body-contact">
+            <iframe class="mt-1" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7817.583753332353!2d104.91304044501476!3d11.566772477934665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3109516b4b83e617%3A0xc464b23f83b4309a!2z4Z6A4Z-S4Z6a4Z6f4Z694Z6E4Z6R4Z-B4Z6f4Z6F4Z6a4Z6O4Z-N!5e0!3m2!1skm!2skh!4v1647961717371!5m2!1skm!2skh" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-12 pb-5">
+        <div class="card-daily-new mt-5 shadow">
+          <h4 class="font-title">{% translate 'មតិយោបល់' %}</h4>
+          <div class="info-body-contact">
+            <div class="row col-12">
+              <div class="group-form col-md-6 new-dt-comment-form">
+                  <label for="name" class="form-label">ឈ្មោះ</label>
+                  <input type="text" class="form-control" id="name" placeholder="ឈ្មោះ">
+              </div>
+              <div class="group-form col-md-6 new-dt-comment-form">
+                  <label for="email" class="form-label">អុីម៉ែល</label>
+                  <input type="email" class="form-control" id="email" placeholder="អុីម៉ែល">
+              </div>
+              <div class="group-form col-md-12 new-dt-comment-form">
+                  <label for="comment" class="form-label">ការពិពណ៌នា</label>
+                  <textarea class="form-control" id="comment" placeholder="ការពិពណ៌នា"></textarea>
+              </div>
+              <div class="group-form col-md-12 new-dt-comment-form">
+                  <input type="btn" class="btn btn-primary" value="បញ្ចូន">
+              </div>
+          </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  
+  
+</div>
+{% endblock %}
